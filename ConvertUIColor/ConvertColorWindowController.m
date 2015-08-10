@@ -21,6 +21,12 @@
 }
 
 - (IBAction)convert:(id)sender {
+    // 入力された文字列を取得
+    NSString* hexString = self.hexTextField.stringValue;
+    // 文字列を変換
+    NSString* uiColorString = [self stringUIColorFromColorCode:hexString];
+    // 出力用のTextFieldに出力
+    self.uicolorTextField.stringValue = uiColorString;
 }
 
 - (IBAction)clear:(id)sender {
