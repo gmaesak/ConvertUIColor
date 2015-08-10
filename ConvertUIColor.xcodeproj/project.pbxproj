@@ -12,6 +12,8 @@
 		7092226B1B78FFF100C20ACD /* ConvertUIColor.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 7092226A1B78FFF100C20ACD /* ConvertUIColor.xcscheme */; };
 		7092226E1B78FFF100C20ACD /* ConvertUIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7092226D1B78FFF100C20ACD /* ConvertUIColor.m */; };
 		709222711B78FFF100C20ACD /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 709222701B78FFF100C20ACD /* NSObject_Extension.m */; };
+		7092227A1B79014700C20ACD /* ConvertColorWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 709222781B79014700C20ACD /* ConvertColorWindowController.m */; };
+		7092227B1B79014700C20ACD /* ConvertColorWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 709222791B79014700C20ACD /* ConvertColorWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		7092226D1B78FFF100C20ACD /* ConvertUIColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConvertUIColor.m; sourceTree = "<group>"; };
 		7092226F1B78FFF100C20ACD /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
 		709222701B78FFF100C20ACD /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
+		709222771B79014700C20ACD /* ConvertColorWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertColorWindowController.h; sourceTree = "<group>"; };
+		709222781B79014700C20ACD /* ConvertColorWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvertColorWindowController.m; sourceTree = "<group>"; };
+		709222791B79014700C20ACD /* ConvertColorWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConvertColorWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +78,9 @@
 				7092226F1B78FFF100C20ACD /* NSObject_Extension.h */,
 				709222701B78FFF100C20ACD /* NSObject_Extension.m */,
 				709222681B78FFF100C20ACD /* Supporting Files */,
+				709222771B79014700C20ACD /* ConvertColorWindowController.h */,
+				709222781B79014700C20ACD /* ConvertColorWindowController.m */,
+				709222791B79014700C20ACD /* ConvertColorWindowController.xib */,
 			);
 			path = ConvertUIColor;
 			sourceTree = "<group>";
@@ -142,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7092227B1B79014700C20ACD /* ConvertColorWindowController.xib in Resources */,
 				7092226B1B78FFF100C20ACD /* ConvertUIColor.xcscheme in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7092227A1B79014700C20ACD /* ConvertColorWindowController.m in Sources */,
 				7092226E1B78FFF100C20ACD /* ConvertUIColor.m in Sources */,
 				709222711B78FFF100C20ACD /* NSObject_Extension.m in Sources */,
 			);
