@@ -25,4 +25,38 @@
 
 - (IBAction)clear:(id)sender {
 }
+
+/**
+ *  16進数の文字列をUIColorに変換
+ *
+ *  @param colorCode 16進数のカラーコード
+ *
+ *  @return UIColorの文字列
+ */
+- (NSString*)stringUIColorFromColorCode:(NSString*)colorCode
+{
+    // 「#」を取り除く
+    NSString* hexString = [colorCode stringByReplacingOccurrencesOfString:@"#" withString:@""];
+    // 長さが6未満の場合は空文字を返す
+    if (hexString.length < 6) {
+        return @"";
+    }
+    
+    // 16進数をintに変換
+    unsigned int color[3];
+    for (int i = 0; i < 3; i++) {
+        NSString *param = [hexString substringWithRange:NSMakeRange(i * 2, 2)];
+        NSScanner *scanner = [NSScanner scannerWithString:param];
+        [scanner scanHexInt:&color[i]];
+    }
+    
+    // UIColorの文字列に変換
+    NSString* uiColorString = [NSString stringWithFormat:@"[UIColor colorWithRed:%f green:%f blue:%f alpha:1.0f]; // #%@",
+                               color[0] / 255.0f,
+                               color[1] / 255.0f,
+                               color[2] / 255.0f,
+                               hexString];
+    return uiColorString;
+}
+
 @end
