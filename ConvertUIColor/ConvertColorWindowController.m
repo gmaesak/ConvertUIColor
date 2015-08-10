@@ -30,6 +30,9 @@
 }
 
 - (IBAction)clear:(id)sender {
+    // TextFieldの値をリセット
+    self.hexTextField.stringValue = @"";
+    self.uicolorTextField.stringValue = @"";
 }
 
 /**
