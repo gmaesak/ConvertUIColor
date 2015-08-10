@@ -7,10 +7,12 @@
 //
 
 #import "ConvertUIColor.h"
+#import "ConvertColorWindowController.h"
 
 @interface ConvertUIColor()
 
 @property (nonatomic, strong, readwrite) NSBundle *bundle;
+@property (nonatomic) ConvertColorWindowController* windowController;
 @end
 
 @implementation ConvertUIColor
@@ -53,9 +55,10 @@
 // Sample Action, for menu item:
 - (void)doMenuAction
 {
-    NSAlert *alert = [[NSAlert alloc] init];
-    [alert setMessageText:@"Hello, World"];
-    [alert runModal];
+    // 色変換用のWindowを表示
+    self.windowController = [[ConvertColorWindowController alloc] initWithWindowNibName:@"ConvertColorWindowController"];
+    [self.windowController showWindow:self.windowController];
+
 }
 
 - (void)dealloc
